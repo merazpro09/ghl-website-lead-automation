@@ -1,0 +1,23 @@
+{
+  "name": "ghl-website-lead-automation",
+  "version": "1.0.0",
+  "description": "Receive Elementor/WordPress form webhooks, normalize and validate them, and forward clean leads to a GoHighLevel inbound webhook.",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/server.js",
+    "start:env": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "test": "vitest run"
+  },
+  "license": "MIT",
+  "author": "Meraz.Pro <merazulislam90@gmail.com> (https://meraz.pro)",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
